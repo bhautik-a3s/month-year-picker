@@ -258,12 +258,6 @@ class _MonthYearPickerDialogState extends State<MonthYearPickerDialog> {
 
     final picker = LayoutBuilder(
       builder: (context, constraints) {
-        final pickerMaxWidth =
-            _landscapeDialogSize.width - _datePickerHeaderLandscapeWidth;
-        final width = constraints.maxHeight < pickerMaxWidth
-            ? constraints.maxHeight / 3.0 * 4.0
-            : null;
-
         return Stack(
           children: [
             AnimatedPositioned(
